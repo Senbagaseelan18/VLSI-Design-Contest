@@ -150,6 +150,18 @@ For detailed implementation, diagrams, and references, download the full project
 
 
 ---
+---
+
+## 👩‍💻 Contributors
+
+| Name | GitHub Profile |
+|------|----------------|
+| **Senbagaseelan V** | [@Senbagaseelan18](https://github.com/Senbagaseelan18) |
+| **Praveen R** | [@PRAVEENRAMU14](https://github.com/PRAVEENRAMU14) |
+| **Ragul T** | [@Ragul-2005](https://github.com/Ragul-2005) |
+| **Tharun Babu V** | [@TharunBabu-05](https://github.com/TharunBabu-05) |
+
+---
 
 
 **© 2025 VLSI Design Contest – EdgeSight Project Team**  
