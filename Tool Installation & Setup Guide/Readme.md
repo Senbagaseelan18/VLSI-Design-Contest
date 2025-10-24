@@ -37,6 +37,8 @@
 
 **Libero® SoC Design Suite** is Microchip’s complete FPGA design environment that enables the design, synthesis, simulation, and programming of FPGAs such as the **PolarFire® SoC Icicle Kit**.  
 It is the core tool used for developing the **FPGA hardware logic**, including custom accelerators, peripheral interfaces, and RTL design.
+![Microchip Logo](./Images/lib.png)
+
 
 ### 🔹 Key Features
 - SmartDesign graphical system integration environment  
@@ -60,6 +62,8 @@ It is the core tool used for developing the **FPGA hardware logic**, including c
 2. Download the correct version for your OS (Windows/Linux).  
 3. Extract the downloaded archive and begin installation.  
 
+![Microchip Logo](./Images/libdown.png)
+
 ---
 
 ### 🪜 Step 2: Obtain the License
@@ -67,6 +71,8 @@ It is the core tool used for developing the **FPGA hardware logic**, including c
    👉 [Microchip License Portal](https://www.microchipdirect.com/fpga-software-products)
 2. Select **Libero Silver 1-Year DiskID NL License**.  
 3. When prompted, enter your **Disk ID** (unique to your system).
+
+![Microchip Logo](./Images/lic.png)
 
 #### 🧾 To Find Disk ID (Windows)
 Open **Command Prompt** and run:
@@ -116,6 +122,8 @@ The **Volume Serial Number** is your Disk ID.
 
 ---
 
+![Microchip Logo](./Images/env.png)
+
 ### 🪜 Step 5: Verify Installation
 
 - Launch **Libero SoC Design Suite**.  
@@ -124,12 +132,16 @@ The **Volume Serial Number** is your Disk ID.
 
 ✅ **Libero SoC 2025.01** is now fully installed and ready for FPGA design.
 
+![Microchip Logo](./Images/libsoft.png)
+
 ---
 
 ## 💻 3. About SoftConsole IDE
 
 **SoftConsole** is Microchip’s **Eclipse-based Integrated Development Environment (IDE)** for software development on **RISC-V** and **ARM-based SoCs**.  
 For the **PolarFire® SoC Icicle Kit**, SoftConsole is used to develop and debug C/C++ firmware that runs on the RISC-V cores, coordinating with FPGA logic designed in Libero.
+
+![Microchip Logo](./Images/sclogo.png)
 
 ### 🔹 Key Features
 
@@ -170,6 +182,8 @@ For the **PolarFire® SoC Icicle Kit**, SoftConsole is used to develop and debug
 - Verify output on the serial console.
 
 ✅ **SoftConsole** is now ready for firmware development and debugging.
+
+![Microchip Logo](./Images/sftool.png)
 
 ---
 
