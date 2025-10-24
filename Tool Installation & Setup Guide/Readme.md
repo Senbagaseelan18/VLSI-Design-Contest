@@ -80,7 +80,7 @@ It is the core tool used for developing the **FPGA hardware logic**, including c
 3. When prompted, enter your **Disk ID** (unique to your system).
 
 <p align="center">
-  <img src="./Images/lic.png" alt="License Setup" width="400">
+  <img src="./Images/lic.png" alt="License Setup" width="1000">
 </p>
 
 #### 🧾 To Find Disk ID (Windows)
@@ -145,7 +145,7 @@ The **Volume Serial Number** is your Disk ID.
 ✅ **Libero SoC 2025.01** is now fully installed and ready for FPGA design.
 
 <p align="center">
-  <img src="./Images/libsoft.png" alt="Libero SoC Software" width="400">
+  <img src="./Images/libsoft.png" alt="Libero SoC Software" width="1000">
 </p>
 
 
