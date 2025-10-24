@@ -35,6 +35,7 @@
 | 7 | **Contributors** | [Jump to Section](#contributors) |
 
 
+
 ---
 
 ## 🧩 1. About Libero® SoC Design Suite
