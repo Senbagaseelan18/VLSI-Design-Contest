@@ -186,6 +186,51 @@ For the **PolarFire® SoC Icicle Kit**, SoftConsole is used to develop and debug
 ![Microchip Logo](./Images/sftool.png)
 
 ---
+---
+
+## 🧾 Summary
+
+In this setup phase, we successfully installed and configured the essential software tools required for FPGA and SoC development using the **PolarFire® SoC Icicle Kit**.  
+
+The following tools were set up and verified:
+- **Libero® SoC Design Suite 2025.01** — for FPGA design, synthesis, and bitstream generation.  
+- **SoftConsole IDE** — for RISC-V software development, debugging, and hardware-software co-integration.  
+
+These installations mark the foundation of our **EdgeSight – AI-Powered Assistive Vision Device** project, enabling efficient design and development on the **Microchip PolarFire® SoC platform**.  
+
+With the toolchain now fully operational, our next phase involves creating the FPGA hardware architecture and RISC-V firmware integration to bring the EdgeSight system to life.
+
+---
+
+## 🙏 Acknowledgment
+
+We would like to express our sincere gratitude to **Microchip Technology Inc.** for providing access to the **PolarFire® SoC Icicle Kit** and supporting tools such as **Libero® SoC** and **SoftConsole IDE**.  
+Their platform and resources have been instrumental in enabling innovation for this **VLSI Design Contest**.
+
+Thank you, **Microchip**, for empowering students and developers worldwide to explore next-generation SoC and FPGA technologies.
+
+---
+
+## 👩‍💻 Contributors
+
+| Name | GitHub Profile |
+|------|----------------|
+| **Senbagaseelan V** | [@Senbagaseelan18](https://github.com/Senbagaseelan18) |
+| **Praveen R** | [@PRAVEENRAMU14](https://github.com/PRAVEENRAMU14) |
+| **Ragul T** | [@Ragul-2005](https://github.com/Ragul-2005) |
+| **Tharun Babu V** | [@TharunBabu-05](https://github.com/TharunBabu-05) |
+
+---
+
+<div align="center">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Microchip_logo.svg" width="160" alt="Microchip Logo" />
+
+**© 2025 VLSI Design Contest – EdgeSight Project Team**  
+**Powered by Microchip PolarFire® SoC Technology**
+
+</div>
+
 
 <div align="center">
 
