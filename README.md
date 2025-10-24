@@ -72,3 +72,112 @@ It is the core tool used for developing the **FPGA hardware logic**, including c
 Open **Command Prompt** and run:
 ```bash
 vol C:
+```
+
+You’ll get an output like:
+
+```bash 
+Volume in drive C is OS
+Volume Serial Number is XXXX-XXXX
+```
+
+The **Volume Serial Number** is your Disk ID.
+
+4. After submission, **Microchip** will send you a License.dat file.
+
+### 🪜 Step 3: Save the License File
+
+1. Create a new folder in your C drive:
+   ```bash
+   C:\flexlm
+    ```
+2. Copy the provided **License.dat** file into this folder.
+
+### 🪜 Step 4: Set Environment Variable
+
+1. Open **System Properties → Advanced System Settings → Environment Variables**.  
+   _(Shortcut: press `Windows + W` → search “Environment Variables”)_
+
+2. Under **System Variables**:
+
+   - If `LM_LICENSE_FILE` exists → **Edit** → add  
+     ```bash
+     C:\flexlm\License.dat
+     ```
+   - If not → **Create New Variable**  
+     ```bash
+     Name:  LM_LICENSE_FILE
+     Value: C:\flexlm\License.dat
+     ```
+
+> ⚠️ Ensure path and folder names match exactly (case-sensitive).
+
+3. Click **OK** to apply and close all dialogs.
+
+---
+
+### 🪜 Step 5: Verify Installation
+
+- Launch **Libero SoC Design Suite**.  
+- Navigate to **Help → Manage License**.  
+- Verify that **Libero Silver License** is detected.
+
+✅ **Libero SoC 2025.01** is now fully installed and ready for FPGA design.
+
+---
+
+## 💻 3. About SoftConsole IDE
+
+**SoftConsole** is Microchip’s **Eclipse-based Integrated Development Environment (IDE)** for software development on **RISC-V** and **ARM-based SoCs**.  
+For the **PolarFire® SoC Icicle Kit**, SoftConsole is used to develop and debug C/C++ firmware that runs on the RISC-V cores, coordinating with FPGA logic designed in Libero.
+
+### 🔹 Key Features
+
+- Supports **bare-metal** and **Linux-based** RISC-V applications  
+- Integrated **GCC toolchain** and **debugger**  
+- Prebuilt **Board Support Packages (BSPs)** for PolarFire SoC  
+- Seamless **hardware-software co-design** with Libero  
+- Ideal for real-time control, data acquisition, and sensor processing tasks  
+
+### 🔹 Official Resource
+
+🔗 [SoftConsole IDE Download Page](https://www.microchip.com/en-us/tools-resources/develop/microchip-softconsole)
+
+---
+
+## ⚙️ 4. SoftConsole Installation & Setup
+
+### 🪜 Step 1: Installation
+
+1. Download **SoftConsole v2024.2 or newer** from the official Microchip page.  
+2. Install or extract the package based on your OS.  
+3. Launch the IDE and configure your workspace folder.
+
+---
+
+### 🪜 Step 2: Board Setup
+
+1. Install the **PolarFire® SoC BSP (Board Support Package)** when prompted.  
+2. Connect your **Icicle Kit** to the PC using USB.  
+3. Open the terminal in **SoftConsole** to check UART communication.
+
+---
+
+### 🪜 Step 3: Verification
+
+- Create a sample RISC-V “Hello World” project.  
+- Build and program it using the **Debug** option.  
+- Verify output on the serial console.
+
+✅ **SoftConsole** is now ready for firmware development and debugging.
+
+---
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/Setup_Status-Completed-success?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Tools-Libero_&_SoftConsole-blue?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Board-PolarFire®_SoC_Icicle_Kit-red?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Project-EdgeSight_AI_Assistive_Device-green?style=for-the-badge" />
+
+</div>
