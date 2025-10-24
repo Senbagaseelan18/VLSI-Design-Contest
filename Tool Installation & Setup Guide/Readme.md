@@ -156,7 +156,10 @@ The **Volume Serial Number** is your Disk ID.
 **SoftConsole** is Microchip’s **Eclipse-based Integrated Development Environment (IDE)** for software development on **RISC-V** and **ARM-based SoCs**.  
 For the **PolarFire® SoC Icicle Kit**, SoftConsole is used to develop and debug C/C++ firmware that runs on the RISC-V cores, coordinating with FPGA logic designed in Libero.
 
-![Microchip Logo](./Images/sclogo.png)
+<p align="center">
+  <img src="./Images/sclogo.png" alt="SoftConsole Logo" width="400">
+</p>
+
 
 ### 🔹 Key Features
 
