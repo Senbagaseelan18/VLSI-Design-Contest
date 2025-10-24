@@ -24,18 +24,18 @@
 
 | 🔢 # | 📂 Topic | 🔗 Link |
 |------|----------|---------|
-| 1 | **Abstract** | [Jump to Section](#abstract) |
-| 2 | **Core Processing** | [Jump to Section](#core-processing) |
-| 3 | **Vision & Perception** | [Jump to Section](#vision--perception) |
-| 4 | **Audio & User Interaction** | [Jump to Section](#audio--user-interaction) |
-| 5 | **Text, Currency & Face Recognition** | [Jump to Section](#text-currency--face-recognition) |
-| 6 | **Location & Navigation** | [Jump to Section](#location--navigation) |
-| 7 | **Connectivity & Mobile Dashboard** | [Jump to Section](#connectivity--mobile-dashboard) |
-| 8 | **Enclosure & Mounting** | [Jump to Section](#enclosure--mounting) |
-| 9 | **Applications** | [Jump to Section](#applications) |
-| 10 | **Value Add** | [Jump to Section](#value-add) |
-| 11 | **References** | [Jump to Section](#references) |
-| 12 | **Full Document** | [Download PDF](https://drive.google.com/drive/u/0/folders/1FIVgsAOExy2SdsFKW16vbVn_Unv2nVoY) |
+| 1 | **Abstract** | [Jump to Section](#1-abstract) |
+| 2 | **Core Processing** | [Jump to Section](#2-core-processing) |
+| 3 | **Vision & Perception** | [Jump to Section](#3-vision--perception) |
+| 4 | **Audio & User Interaction** | [Jump to Section](#4-audio--user-interaction) |
+| 5 | **Text, Currency & Face Recognition** | [Jump to Section](#5-text-currency--face-recognition) |
+| 6 | **Location & Navigation** | [Jump to Section](#6-location--navigation) |
+| 7 | **Connectivity & Mobile Dashboard** | [Jump to Section](#7-connectivity--mobile-dashboard) |
+| 8 | **Enclosure & Mounting** | [Jump to Section](#8-enclosure--mounting) |
+| 9 | **Applications** | [Jump to Section](#9-applications) |
+| 10 | **Value Add** | [Jump to Section](#10-value-add) |
+| 11 | **References** | [Jump to Section](#11-references) |
+| 12 | **Full Document** | [Jump to Section](#12-full-document) |
 
 
 ---
