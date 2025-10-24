@@ -36,7 +36,8 @@
 | 9 | **Applications** | [Jump to Section](#9-applications) |
 | 10 | **Value Add** | [Jump to Section](#10-value-add) |
 | 11 | **References** | [Jump to Section](#11-references) |
-| 12 | **Full Document** | [Download PDF](./EdgeSight_Project_Idea.pdf) |
+| 12 | **Full Document** | [Download PDF](https://drive.google.com/drive/u/0/folders/1FIVgsAOExy2SdsFKW16vbVn_Unv2nVoY) |
+
 
 ---
 
@@ -139,8 +140,10 @@ EdgeSight detects objects, reads text, recognizes currency, identifies faces, an
 
 ## 📄 12. Full Document
 
-For detailed implementation and diagrams, download the full project document here:  
-[EdgeSight_Project_Idea.pdf](./EdgeSight_Project_Idea.pdf)
+For detailed implementation, diagrams, and references, download the full project document here:  
+
+[📄 EdgeSight Project PDF](https://drive.google.com/drive/u/0/folders/1FIVgsAOExy2SdsFKW16vbVn_Unv2nVoY)
+
 
 ---
 
