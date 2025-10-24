@@ -53,7 +53,7 @@ Unlike cloud-based solutions, EdgeSight operates fully offline, ensuring privacy
 - **Onboard DDR3/DDR4/LPDDR4 Memory** – supports AI models, OCR, and data buffering.
 
 <p align="center">
-  <img src="./Images/block.png" alt="Libero SoC Software" width="400">
+  <img src="./Images/b.png" alt="Libero SoC Software" width="1000">
 </p>
 
 
