@@ -42,7 +42,9 @@
 
 **Libero® SoC Design Suite** is Microchip’s complete FPGA design environment that enables the design, synthesis, simulation, and programming of FPGAs such as the **PolarFire® SoC Icicle Kit**.  
 It is the core tool used for developing the **FPGA hardware logic**, including custom accelerators, peripheral interfaces, and RTL design.
-![Microchip Logo](./Images/lib.png)
+<p align="center">
+  <img src="./Images/lib.png" alt="Microchip Logo" width="400">
+</p>
 
 
 ### 🔹 Key Features
@@ -77,7 +79,9 @@ It is the core tool used for developing the **FPGA hardware logic**, including c
 2. Select **Libero Silver 1-Year DiskID NL License**.  
 3. When prompted, enter your **Disk ID** (unique to your system).
 
-![Microchip Logo](./Images/lic.png)
+<p align="center">
+  <img src="./Images/lic.png" alt="License Setup" width="400">
+</p>
 
 #### 🧾 To Find Disk ID (Windows)
 Open **Command Prompt** and run:
@@ -127,7 +131,10 @@ The **Volume Serial Number** is your Disk ID.
 
 ---
 
-![Microchip Logo](./Images/env.png)
+<p align="center">
+  <img src="./Images/env.png" alt="Environment Variable Setup" width="400">
+</p>
+
 
 ### 🪜 Step 5: Verify Installation
 
@@ -137,7 +144,10 @@ The **Volume Serial Number** is your Disk ID.
 
 ✅ **Libero SoC 2025.01** is now fully installed and ready for FPGA design.
 
-![Microchip Logo](./Images/libsoft.png)
+<p align="center">
+  <img src="./Images/libsoft.png" alt="Libero SoC Software" width="400">
+</p>
+
 
 ---
 
