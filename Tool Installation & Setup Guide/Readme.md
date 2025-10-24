@@ -10,8 +10,8 @@
   </p>
 
   <a href="https://www.microchip.com/" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/en/9/91/Microchip_Technology_logo.svg" width="200"/>
-  </a>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Microchip_logo.svg" width="200" alt="Microchip Technology logo">
+</a>
 
   <br><br>
   <img src="https://img.shields.io/badge/Microchip-PolarFire®_SoC-red?style=for-the-badge" />
