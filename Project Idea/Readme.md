@@ -40,14 +40,14 @@
 
 ---
 
-## 📝 1. Abstract
+##  1. Abstract
 
 EdgeSight is a wearable assistive device powered by the **PolarFire® SoC FPGA**, designed to help visually impaired individuals perceive their surroundings through AI-driven vision and natural voice guidance.  
 Unlike cloud-based solutions, EdgeSight operates fully offline, ensuring privacy, reliability, and low power consumption.
 
 ---
 
-## 🧩 2. Core Processing
+## 2. Core Processing
 
 - **PolarFire® SoC FPGA** – FPGA fabric accelerates vision tasks; RISC-V subsystem runs Linux/RTOS for control, chatbot, and user services.  
 - **Onboard DDR3/DDR4/LPDDR4 Memory** – supports AI models, OCR, and data buffering.
@@ -59,7 +59,7 @@ Unlike cloud-based solutions, EdgeSight operates fully offline, ensuring privacy
 
 ---
 
-## 👁️ 3. Vision & Perception
+##  3. Vision & Perception
 
 - **MIPI CSI Camera** – captures live video for object detection and OCR.  
 - **Ultrasonic / LiDAR** – enhances obstacle detection.  
@@ -70,7 +70,7 @@ EdgeSight detects objects, reads text, recognizes currency, identifies faces, an
 
 ---
 
-## 🔊 4. Audio & User Interaction
+## 4. Audio & User Interaction
 
 - **I²S Audio + Microphone Array** – supports wake word and commands.  
 - **Offline Voice Assistant & AI Chatbot** – natural interaction without internet.  
@@ -79,7 +79,7 @@ EdgeSight detects objects, reads text, recognizes currency, identifies faces, an
 
 ---
 
-## 📄 5. Text, Currency & Face Recognition
+## 5. Text, Currency & Face Recognition
 
 - **OCR** – reads text from books, signs, labels.  
 - **Currency Recognition** – identifies denominations.  
@@ -87,7 +87,7 @@ EdgeSight detects objects, reads text, recognizes currency, identifies faces, an
 
 ---
 
-## 🗺️ 6. Location & Navigation
+## 6. Location & Navigation
 
 - **GPS Module** – provides real-time location and spoken updates.  
 - **Navigation Guidance** – step-by-step voice + haptic feedback.  
@@ -95,7 +95,7 @@ EdgeSight detects objects, reads text, recognizes currency, identifies faces, an
 
 ---
 
-## 📡 7. Connectivity & Mobile Dashboard
+## 7. Connectivity & Mobile Dashboard
 
 - **Bluetooth Module** – links to smartphone.  
 - **LTE/4G** – standalone emergency messaging.  
@@ -103,7 +103,7 @@ EdgeSight detects objects, reads text, recognizes currency, identifies faces, an
 
 ---
 
-## 🏠 8. Enclosure & Mounting
+## 8. Enclosure & Mounting
 
 - **Lightweight Wearable Housing** – chest, belt, or glasses mount.  
 - **Water-Resistant (IP54+)** – outdoor ready.  
@@ -111,7 +111,7 @@ EdgeSight detects objects, reads text, recognizes currency, identifies faces, an
 
 ---
 
-## 🚀 9. Applications
+## 9. Applications
 
 - **Assistive Technology** – Object detection, obstacle avoidance, text/currency reading, face recognition.  
 - **Smart Mobility & Navigation** – GPS-based location updates, SOS alerts, safe navigation.  
@@ -121,7 +121,7 @@ EdgeSight detects objects, reads text, recognizes currency, identifies faces, an
 
 ---
 
-## 💎 10. Value Add
+## 10. Value Add
 
 - Fully Offline Operation – privacy, reliability, independence.  
 - FPGA Acceleration – real-time AI inference, low power.  
@@ -134,7 +134,7 @@ EdgeSight detects objects, reads text, recognizes currency, identifies faces, an
 
 ---
 
-## 📚 11. References
+## 11. References
 
 1. Saini, Munish, and Eshan Sengupta. "Artificial intelligence inspired fog-cloud-based visual-assistance framework for blind and visually-impaired people." *Multimedia Tools and Applications* (2024): 1-32.  
 2. Lima, Rui, et al. "Visually impaired people positioning assistance system using artificial intelligence." *IEEE Sensors Journal* 23.7 (2023): 7758-7765.  
