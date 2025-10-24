@@ -141,7 +141,7 @@ For the **PolarFire® SoC Icicle Kit**, SoftConsole is used to develop and debug
 
 ### 🔹 Official Resource
 
-🔗 [SoftConsole IDE Download Page](https://www.microchip.com/en-us/tools-resources/develop/microchip-softconsole)
+🔗 [SoftConsole IDE Download Page]([https://www.microchip.com/en-us/tools-resources/develop/microchip-softconsole](https://ww1.microchip.com/downloads/secure/aemDocuments/documents/FPGA/media-content/FPGA/SoftConsole/v2022-2/Microchip-SoftConsole-v2022.2-RISC-V-747-windows-x64-installer.exe))
 
 ---
 
