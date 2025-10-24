@@ -26,10 +26,14 @@
 
 | 🔢 # | 📂 Topic | 🔗 Link |
 |------|----------|---------|
-| 1 | **About Libero® SoC Design Suite** | [Jump to Section](#1-about-liberor-soc-design-suite) |
-| 2 | **Libero® SoC Installation & License Setup** | [Jump to Section](#2-liberor-soc-installation--license-setup) |
+| 1 | **About Libero® SoC Design Suite** | [Jump to Section](#1-about-libero-soc-design-suite) |
+| 2 | **Libero® SoC Installation & License Setup** | [Jump to Section](#2-libero-soc-installation--license-setup) |
 | 3 | **About SoftConsole IDE** | [Jump to Section](#3-about-softconsole-ide) |
 | 4 | **SoftConsole Installation & Setup** | [Jump to Section](#4-softconsole-installation--setup) |
+| 5 | **Summary** | [Jump to Section](#summary) |
+| 6 | **Acknowledgment** | [Jump to Section](#acknowledgment) |
+| 7 | **Contributors** | [Jump to Section](#contributors) |
+
 
 ---
 
