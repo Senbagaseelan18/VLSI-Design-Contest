@@ -113,6 +113,8 @@ while true; do
   done
 done
 ```
+- Stop blinking: Ctrl + C
+
 
 ## 🧩 5. Push Button Controlled LED
 
