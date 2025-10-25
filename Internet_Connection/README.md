@@ -67,7 +67,10 @@ Perform the following steps on your **Windows laptop** to enable **Internet Conn
    - Under *“Home networking connection”*, select **Ethernet**  
 
 > 💡 Windows automatically assigns **192.168.137.1** to the Ethernet adapter.
-
+<div align="center">
+  <img src="./internet-1.jpg" width="750" alt="Windows Internet Connection Sharing Configuration">
+  <p><i>Figure 1: Enabling Internet Connection Sharing (ICS) on Windows</i></p>
+</div>
 ---
 
 ## 3. Icicle Kit Network Setup
@@ -92,6 +95,8 @@ If not assigned automatically, you can manually set it:
 ```bash
 ip addr add 192.168.137.25/24 dev eth0
 ```
+<div align="center"> <img src="./integnet-2.jpg" width="750" alt="Ethernet Connection Between Laptop and Icicle Kit"> <p><i>Figure 2: Ethernet connection between Windows laptop and PolarFire® SoC Icicle Kit</i></p> </div>
+
 ### Step 3: Configure default gateway
 ```bash
 ip route add default via 192.168.137.1 dev eth0
@@ -108,7 +113,7 @@ Verify connectivity using ping:
 ping -c 4 8.8.8.8      # Test network reachability
 ping -c 4 google.com   # Test DNS resolution
 ```
-
+<div align="center"> <img src=".internet-3.jpg" width="750" alt="Ping test on Icicle Kit terminal"> <p><i>Figure 3: Successful ping test verifying Ethernet internet connectivity</i></p> </div>
 Successful pings indicate that the Icicle Kit is connected to the internet via the laptop.
 
 
