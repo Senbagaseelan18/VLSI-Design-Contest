@@ -81,6 +81,11 @@ mchp-base-image-mpfs-icicle-kit.rootfs-20250725101827.wic
 - Click **“Flash!”**  
 - Wait for the flashing and validation process to complete.
 
+  <p align="center">
+    <img width="996" height="627" alt="image" src="https://github.com/user-attachments/assets/4402f095-d993-4c7c-a554-3f9478cdb394" />
+  </p>
+
+
 ### Step 5: Insert SD/eMMC into Icicle Kit
 
 - Safely eject the SD card or eMMC from your PC.  
@@ -96,14 +101,22 @@ mchp-base-image-mpfs-icicle-kit.rootfs-20250725101827.wic
 
 - Power on the Icicle Kit after inserting the SD/eMMC.
 
-### Step 2: Connect via UART
+  <p align="center">
+    <img width="960" height="1280" alt="image" src="https://github.com/user-attachments/assets/2793e108-6ed4-40e6-87d3-e3ac5fe7f8d7" />
+</p>
+
+### Step 2: Connect via Putty
 
 - Connect the board to your PC using a UART/serial interface.  
 - Serial settings:  
 - Baud rate: 115200  
 - Data bits: 8  
 - Stop bit: 1  
-- No parity, no flow control  
+- No parity, no flow control
+
+  <p align="center">
+    <img width="595" height="538" alt="image" src="https://github.com/user-attachments/assets/60ee8847-f3c1-432b-b5cd-8a270d48914b" /></p>
+
 
 ### Step 3: Login as Root
 
@@ -116,13 +129,16 @@ mpfs-icicle-kit login: root
 ```bash
 ls /
 ```
-- Expected output:
 
 - ✅ Successful boot confirmed by root prompt:
 
   ```text
    root@mpfs-icicle-kit:~#
   ```
+
+<p align="center">
+  <img width="826" height="515" alt="image" src="https://github.com/user-attachments/assets/3fdccc49-aa1c-47d8-a874-1883c9d120e9" />
+</p>
 
  ### 🧩 5. Summary & Notes
 
