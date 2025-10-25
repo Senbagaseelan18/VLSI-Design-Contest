@@ -121,13 +121,12 @@ ping -c 4 google.com   # Test DNS resolution
 Successful pings indicate that the Icicle Kit is connected to the internet via the laptop.
 
 
----
-# 5. Troubleshooting
+## 5. Troubleshooting
 
-|-------------------|-----------------------------------|-------------------------------------|
-|Issue	#| Cause	| Solution |
-100% packet loss	| **Incorrect gateway or DNS configuration** |	Check IP route and DNS entries |
-No IP assigned | **DHCP failed** |	Manually assign IP (192.168.137.25/24) |
-Still no internet |	ICS not active	| Re-enable Internet Connection Sharing on Wi-Fi |
-DNS not resolving |	/etc/resolv.conf missing	| Recreate the file with nameservers as shown above |
----
+| 🧩 Issue | ⚠️ Cause | 🛠️ Solution |
+|-----------|-----------|-------------|
+| `100% packet loss` | Incorrect gateway or DNS configuration | Check IP route and DNS entries using:<br>`ip route show` and verify `/etc/resolv.conf` |
+| No IP assigned | DHCP failed | Manually assign IP:<br>`ip addr add 192.168.137.25/24 dev eth0` |
+| Still no internet | Internet Connection Sharing (ICS) not active | Re-enable Internet Connection Sharing on your laptop’s Wi-Fi adapter |
+| DNS not resolving | `/etc/resolv.conf` missing or empty | Recreate the file with:<br>`echo "nameserver 8.8.8.8" > /etc/resolv.conf`<br>`echo "nameserver 8.8.4.4" >> /etc/resolv.conf` |
+
