@@ -231,12 +231,12 @@ Click ON/OFF buttons for each LED to toggle the respective on-board light.
 ## 7. Demonstration
 
 <div align="center">
-  <img src="Images/webled-1.jpg" width="750" alt="Web Interface for LED Control">
+  <img src="images/webled-1.jpg" width="750" alt="Web Interface for LED Control">
   <p><i>Figure 1: Browser-based LED control panel hosted on the Icicle Kit</i></p>
 </div>
 
 <div align="center">
-  <img src="Images/webled-2.jpg" width="750" alt="LEDs on PolarFire® SoC Icicle Kit lighting up">
+  <img src="images/webled-2.jpg" width="750" alt="LEDs on PolarFire® SoC Icicle Kit lighting up">
   <p><i>Figure 2: On-board LEDs responding to web commands in real-time</i></p>
 </div>
 
