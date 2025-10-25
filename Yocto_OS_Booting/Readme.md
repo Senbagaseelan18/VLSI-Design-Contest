@@ -47,9 +47,9 @@ This guide demonstrates:
 
 We used the prebuilt Yocto Linux image:
 
+```text
 mchp-base-image-mpfs-icicle-kit.rootfs-20250725101827.wic
-
-
+```
 - PolarFire SoC Yocto BSP version: v2025.07  
 - Boots Linux directly without updates.
 
@@ -67,8 +67,9 @@ mchp-base-image-mpfs-icicle-kit.rootfs-20250725101827.wic
 - Open BalenaEtcher.  
 - Click **“Flash from file”** and select:  
 
+```text
 mchp-base-image-mpfs-icicle-kit.rootfs-20250725101827.wic
-
+```
 
 ### Step 3: Select Target Device
 
