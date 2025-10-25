@@ -77,3 +77,36 @@ After connecting and powering the board, open a **serial terminal** (e.g., PuTTY
 ### Step 1: Bring up the Ethernet interface
 ```bash
 ip link set eth0 up
+```
+
+### Step 2: Verify IP address
+ip addr show eth0
+
+
+Expected output includes:
+```bash
+inet 192.168.137.xx/24
+```
+
+If not assigned automatically, you can manually set it:
+```bash
+ip addr add 192.168.137.25/24 dev eth0
+```
+### Step 3: Configure default gateway
+```bash
+ip route add default via 192.168.137.1 dev eth0
+```
+### Step 4: Add DNS servers
+```bash
+echo "nameserver 8.8.8.8" > /etc/resolv.conf
+echo "nameserver 8.8.4.4" >> /etc/resolv.conf
+```
+## 4. Testing Internet Connection
+
+Verify connectivity using ping:
+```bash
+ping -c 4 8.8.8.8      # Test network reachability
+ping -c 4 google.com   # Test DNS resolution
+```
+
+Successful pings indicate that the Icicle Kit is connected to the internet via the laptop.
