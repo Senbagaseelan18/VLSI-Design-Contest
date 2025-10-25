@@ -133,6 +133,7 @@ ls /
 - Ready for next steps: LED control and firmware development.
 
 <div align="center"> <img src="https://img.shields.io/badge/Boot_Status-Completed-success?style=for-the-badge" /> <img src="https://img.shields.io/badge/Board-PolarFire®_SoC_Icicle_Kit-red?style=for-the-badge" /> <img src="https://img.shields.io/badge/Platform-EdgeSight_AI_Assistive_Device-green?style=for-the-badge" /> <img src="https://img.shields.io/badge/Flashing-BalenaEtcher-orange?style=for-the-badge" /> </div>
+
 ## 👩‍💻 Contributors
 
 | Name | GitHub Profile |
