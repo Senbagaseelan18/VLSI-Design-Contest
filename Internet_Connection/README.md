@@ -83,8 +83,9 @@ ip link set eth0 up
 ```
 
 ### Step 2: Verify IP address
+```bash
 ip addr show eth0
-
+```
 
 Expected output includes:
 ```bash
