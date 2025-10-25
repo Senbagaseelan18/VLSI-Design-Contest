@@ -92,6 +92,31 @@ Click the links below to explore the completed sections of the repository:
 
 ---
 
+## Project directories (quick links)
+
+Below are the main project directories with one-line descriptions and quick links so contributors and reviewers can jump to what they need.
+
+- 📁 [Boot Image Installation](./Boot%20Image%20Installation) — Step‑by‑step instructions and images to flash the Linux BSP and boot the PolarFire® SoC Icicle Kit.
+- 🌐 [Internet_Connection](./Internet_Connection) — Network configuration, DHCP/static IP examples, and troubleshooting tips for connecting the board to your laptop or network.
+- 💡 [LED_Blinking](./LED_Blinking) — Example code, images and short videos demonstrating LED blink patterns and simple firmware examples.
+- 🧭 [Project Idea](./Project%20Idea) — Design documents, block diagrams, objectives and planned milestones for the EdgeSight project.
+- 🖥️ [Web-based_led_control](./Web-based_led_control) — Flask web UI demo for controlling board LEDs over Ethernet; includes server code and HTML template.
+
+---
+
+### Quick status badges
+
+<div>
+  <img src="https://img.shields.io/badge/Boot-Image_OK-brightgreen" alt="boot" />
+  <img src="https://img.shields.io/badge/Network-Docs_ready-blue" alt="network" />
+  <img src="https://img.shields.io/badge/LED-Demos_present-orange" alt="leds" />
+  <img src="https://img.shields.io/badge/Web_UI-ready-green" alt="webui" />
+</div>
+
+---
+
+---
+
 ## 5. Summary
 
 This repository consolidates all design, development, and documentation efforts for the **EdgeSight AI Assistive Device**.  
@@ -125,3 +150,21 @@ Their platform and resources have been instrumental in enabling students to inno
 **Powered by Microchip PolarFire® SoC Technology**
 
 </div>
+
+---
+
+## 🎯 Recent additions (summary)
+
+The following project folders were added to the repository and are available under the repository root. I have *not* changed the content above — this is an additive summary to make the new material easier to find:
+
+- `Boot Image Installation/` — Instructions and resources to flash the Linux BSP image and boot the PolarFire® SoC Icicle Kit.
+- `Internet_Connection/` — Network setup and troubleshooting notes so the board can be accessed from your laptop/network.
+- `LED_Blinking/` — Example files and media showing LED blinking demos and sample code.
+- `Project Idea/` — Design concept, block diagrams and project planning documents for the EdgeSight project.
+- `Web-based_led_control/` — A web interface demo (Flask + templates) for controlling board LEDs over the network. See the README inside that folder for full instructions and example code.
+
+If you want, I can also:
+- Add links to these directories into the Table of Contents at the top (keeping the original sections intact), or
+- Create a short index file that lists each new directory with one-line descriptions and links.
+
+Tell me which option you prefer and I will update the README accordingly.
