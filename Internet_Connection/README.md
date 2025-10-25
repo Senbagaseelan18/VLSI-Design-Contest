@@ -115,7 +115,7 @@ Successful pings indicate that the Icicle Kit is connected to the internet via t
 ---
 # 5. Troubleshooting
 
-|------|----------|---------|
+|-------------------|-----------------------------------|-------------------------------------|
 |Issue	| Cause	| Solution |
 100% packet loss	| Incorrect gateway or DNS configuration |	Check IP route and DNS entries |
 No IP assigned | DHCP failed |	Manually assign IP (192.168.137.25/24) |
