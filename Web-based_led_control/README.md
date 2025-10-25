@@ -229,15 +229,18 @@ Click ON/OFF buttons for each LED to toggle the respective on-board light.
 ---
 
 ## 7. Demonstration
-
 <div align="center">
-  <img src="Images/webled-1.jpg" width="750" alt="Web Interface for LED Control">
-  <p><i>Figure 1: Browser-based LED control panel hosted on the Icicle Kit</i></p>
+  <img src="images/WhatsApp Image 2025-10-25 at 18.37.01_8c78e23a.jpg" width="750" alt="LEDs on PolarFire® SoC Icicle Kit lighting up">
+  <p><i>Figure 1:led code called through web </i></p>
+</div>
+<div align="center">
+  <img src="images/webled-1.jpg" width="750" alt="Web Interface for LED Control">
+  <p><i>Figure 2: Browser-based LED control panel hosted on the Icicle Kit</i></p>
 </div>
 
 <div align="center">
-  <img src="Images/webled-2.jpg" width="750" alt="LEDs on PolarFire® SoC Icicle Kit lighting up">
-  <p><i>Figure 2: On-board LEDs responding to web commands in real-time</i></p>
+  <img src="images/webled-2.jpg" width="750" alt="LEDs on PolarFire® SoC Icicle Kit lighting up">
+  <p><i>Figure 3: On-board LEDs responding to web commands in real-time</i></p>
 </div>
 
 ---
@@ -272,3 +275,4 @@ Web-based_led_control/Images/webled-2.jpg
 Notes:
 - The file above is now your single `README.md` for the web LED control demo.
 - If you want, I can also create the `led_web.py` and `templates/index.html` files in this repo and add a small commit instruction to push them to your GitHub — tell me if you want me to do that.
+
