@@ -67,11 +67,16 @@ Turn ON:
 ```bash
 echo 1 > /sys/class/leds/led1/brightness
 ```
+<p align="center"><img width="960" height="1280" alt="image" src="https://github.com/user-attachments/assets/b12bcb16-128e-4afb-bead-1f874bb29c26" /></p>
 
 Turn OFF:
 ```bash
 echo 0 > /sys/class/leds/led1/brightness
 ```
+
+<p align="center">
+  <img width="972" height="598" alt="image" src="https://github.com/user-attachments/assets/ff9f4705-eb82-458a-a981-6f8e048259ce" />
+</p>
 
 ## 🧩 4. LED Blinking Patterns
 # 4.1 Continuous Blinking
