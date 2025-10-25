@@ -125,6 +125,15 @@ It serves as a **central reference** for tool setup, project ideas, FPGA and RIS
 As the project progresses, this repository will be **continuously updated** with new developments, implementation files, and results from the PolarFire® SoC Icicle Kit.
 
 ---
+## 🎯 Recent additions (summary)
+
+The following project folders were added to the repository and are available under the repository root. I have *not* changed the content above — this is an additive summary to make the new material easier to find:
+
+- `Boot Image Installation/` — Instructions and resources to flash the Linux BSP image and boot the PolarFire® SoC Icicle Kit.
+- `Internet_Connection/` — Network setup and troubleshooting notes so the board can be accessed from your laptop/network.
+- `LED_Blinking/` — Example files and media showing LED blinking demos and sample code.
+- `Project Idea/` — Design concept, block diagrams and project planning documents for the EdgeSight project.
+- `Web-based_led_control/` — A web interface demo (Flask + templates) for controlling board LEDs over the network. See the README inside that folder for full instructions and example code.
 
 ## 6. Contributors
 
@@ -153,18 +162,6 @@ Their platform and resources have been instrumental in enabling students to inno
 
 ---
 
-## 🎯 Recent additions (summary)
 
-The following project folders were added to the repository and are available under the repository root. I have *not* changed the content above — this is an additive summary to make the new material easier to find:
 
-- `Boot Image Installation/` — Instructions and resources to flash the Linux BSP image and boot the PolarFire® SoC Icicle Kit.
-- `Internet_Connection/` — Network setup and troubleshooting notes so the board can be accessed from your laptop/network.
-- `LED_Blinking/` — Example files and media showing LED blinking demos and sample code.
-- `Project Idea/` — Design concept, block diagrams and project planning documents for the EdgeSight project.
-- `Web-based_led_control/` — A web interface demo (Flask + templates) for controlling board LEDs over the network. See the README inside that folder for full instructions and example code.
 
-If you want, I can also:
-- Add links to these directories into the Table of Contents at the top (keeping the original sections intact), or
-- Create a short index file that lists each new directory with one-line descriptions and links.
-
-Tell me which option you prefer and I will update the README accordingly.
