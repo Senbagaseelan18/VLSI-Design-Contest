@@ -126,15 +126,11 @@ ls /
 
  ### 🧩 5. Summary & Notes
 
-The Yocto Linux BSP provides root access without a password.
-
-Flashing with BalenaEtcher ensures a reliable write of the .wic image to SD/eMMC.
-
-Boot process verified via UART console.
-
-Directories confirmed for Linux environment setup.
-
-Ready for next steps: LED control and firmware development.
+- The Yocto Linux BSP provides root access without a password.
+- Flashing with BalenaEtcher ensures a reliable write of the .wic image to SD/eMMC.
+- Boot process verified via UART console.
+- Directories confirmed for Linux environment setup.
+- Ready for next steps: LED control and firmware development.
 
 <div align="center"> <img src="https://img.shields.io/badge/Boot_Status-Completed-success?style=for-the-badge" /> <img src="https://img.shields.io/badge/Board-PolarFire®_SoC_Icicle_Kit-red?style=for-the-badge" /> <img src="https://img.shields.io/badge/Platform-EdgeSight_AI_Assistive_Device-green?style=for-the-badge" /> <img src="https://img.shields.io/badge/Flashing-BalenaEtcher-orange?style=for-the-badge" /> </div>
 ## 👩‍💻 Contributors
