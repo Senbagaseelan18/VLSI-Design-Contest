@@ -137,13 +137,15 @@ Playback verified using:
 
 -🎞️ Windows Media Player
 
-Stage	Description	Example
-🟢 Camera Capture	Live USB feed captured	
+## 🖥️ Output & Verification
 
-🔴 Recording	1080p MJPEG recording	
+| 🧩 **Stage** | 📝 **Description** |
+|--------------|--------------------|
+| 🟢 **Camera Capturing** | The USB camera successfully captured live 1080p video using V4L2 commands. | 
+| 🔴 **Video Recording** | Recorded ~10 seconds of MJPEG video and saved as `/root/video.mjpg` on the board. | 
+| 🔵 **Playback Verification** | The converted `video.mp4` played smoothly on VLC/Windows Media Player with correct frame rate and brightness. | 
 
-🔵 Transfer & Playback	MP4 playback on PC	
-🧠 5. Observations & Results
+#🧠 5. Observations & Results
 
 ✅ Successful USB camera interface and detection
 
