@@ -93,13 +93,14 @@ gstreamer1.0-plugins-good \
 v4l-utils \
 ```
 
-## 📸 Accessing a Webcam
+## 📸 3. Accessing a Webcam
 
 Use the below command to capture an image from a webcam
 ```bash
 v4l2-ctl --device /dev/video0 --set-fmt-video=width=640,height=480,pixelformat=MJPG --stream-mmap=3 --stream-count=100 --stream-to=stream.vid
 ```
-## ⚠️ Known Issues
+
+## ⚠️ 4. Known Issues
 - 1.VBUS_ERROR in a_idle error.
 
 A VBUS_ERROR occurs when you boot Linux and then connect a USB device (e.g a webcam) directly to J16. Solution: Rather than connecting the webcam directly, connect a powered hub to J16 on the Icicle Kit, and then connect the webcam to the hub. To connect high power USB device, its is better to use an externally powered USB hub in between the USB device and the Icicle Kit.
