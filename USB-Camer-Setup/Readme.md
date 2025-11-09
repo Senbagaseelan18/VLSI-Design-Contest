@@ -104,9 +104,9 @@ v4l2-ctl --device /dev/video0 --set-fmt-video=width=640,height=480,pixelformat=M
 
 A VBUS_ERROR occurs when you boot Linux and then connect a USB device (e.g a webcam) directly to J16. Solution: Rather than connecting the webcam directly, connect a powered hub to J16 on the Icicle Kit, and then connect the webcam to the hub. To connect high power USB device, its is better to use an externally powered USB hub in between the USB device and the Icicle Kit.
 
-- 2If a VBUS_ERROR is displayed and LEDs turns off, a board power cycle will be needed to get the USB port working.
+- 2. If a VBUS_ERROR is displayed and LEDs turns off, a board power cycle will be needed to get the USB port working.
 
-
+---
 
 
 ## 🚀 3. Implementation Steps
