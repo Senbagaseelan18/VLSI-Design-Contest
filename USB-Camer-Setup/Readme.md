@@ -27,11 +27,12 @@
 |------|----------|---------|
 | 1 | **Objective** | [Jump to Section](#-1-objective) |
 | 2 | **Requirements** | [Jump to Section](#-2-requirements) |
-| 3 | **Implementation Steps** | [Jump to Section](#-3-implementation-steps) |
-| 4 | **Output & Verification** | [Jump to Section](#-4-output--verification) |
-| 5 | **Observations & Results** | [Jump to Section](#-5-observations--results) |
-| 6 | **Repository Structure** | [Jump to Section](#-6-repository-structure) |
-| 7 | **Contributors** | [Jump to Section](#-7-contributors) |
+| 3 | **CAM SETUP** | [Jump to Section](#-3-cam-setup) |
+| 4 | **Implementation Steps** | [Jump to Section](#-4-implementation-steps) |
+| 5 | **Output & Verification** | [Jump to Section](#-5-output--verification) |
+| 6 | **Observations & Results** | [Jump to Section](#-6-observations--results) |
+| 7 | **Repository Structure** | [Jump to Section](#-7-repository-structure) |
+| 8 | **Contributors** | [Jump to Section](#-8-contributors) |
 
 ---
 
@@ -63,7 +64,7 @@ The system performs:
 
 ---
 
-# 🧰 CAM SETUP
+# 🧰 3. CAM SETUP
 
 This section focuses on enabling hardware and driver-level support for USB Camera integration  
 in the **Buildroot-based Linux environment**.
@@ -93,13 +94,13 @@ gstreamer1.0-plugins-good \
 v4l-utils \
 ```
 
-## Accessing a webcam
+## 📸 Accessing a Webcam
 
 Use the below command to capture an image from a webcam
 ```bash
 v4l2-ctl --device /dev/video0 --set-fmt-video=width=640,height=480,pixelformat=MJPG --stream-mmap=3 --stream-count=100 --stream-to=stream.vid
 ```
-## Known Issues
+## ⚠️ Known Issues
 - 1.VBUS_ERROR in a_idle error.
 
 A VBUS_ERROR occurs when you boot Linux and then connect a USB device (e.g a webcam) directly to J16. Solution: Rather than connecting the webcam directly, connect a powered hub to J16 on the Icicle Kit, and then connect the webcam to the hub. To connect high power USB device, its is better to use an externally powered USB hub in between the USB device and the Icicle Kit.
@@ -109,7 +110,7 @@ A VBUS_ERROR occurs when you boot Linux and then connect a USB device (e.g a web
 ---
 
 
-## 🚀 3. Implementation Steps
+## 🚀 4. Implementation Steps
 
 ### 🧮 Step 1 – Detect the Camera
 ```bash
@@ -194,7 +195,7 @@ Playback verified using:
 
 ---
 
-#🧠 5. Observations & Results
+#🧠 6. Observations & Results
 
 - ✅ Successful USB camera interface and detection
 
@@ -208,7 +209,7 @@ Playback verified using:
 
 ---
 
-# 📂 6. Repository Structure
+# 📂 7. Repository Structure
 ```bash
 usb-cam-recorder/
 │
@@ -225,3 +226,31 @@ usb-cam-recorder/
 │   └── video_playback.jpg
 └── LICENSE
 ```
+
+# 👩‍💻 8. Contributors
+
+| 👤 **Name** | 🌐 **GitHub Profile** |
+|-------------|-----------------------|
+| **Senbagaseelan V** | [@Senbagaseelan18](https://github.com/Senbagaseelan18) |
+| **Praveen R** | [@PRAVEENRAMU14](https://github.com/PRAVEENRAMU14) |
+| **Ragul T** | [@Ragul-2005](https://github.com/Ragul-2005) |
+| **Tharun Babu V** | [@TharunBabu-05](https://github.com/TharunBabu-05) |
+
+---
+
+<div align="center">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Microchip_logo.svg" width="160" alt="Microchip Logo" />
+
+**© 2025 VLSI Design Contest – USB Cam Recorder Project**  
+**Developed on Buildroot Linux using PolarFire® SoC Icicle Kit**
+
+<br><br>
+
+<img src="https://img.shields.io/badge/Setup_Status-Completed-success?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Recording-Working-green?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Transfer-Successful-blue?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Playback-Verified-orange?style=for-the-badge" />
+
+</div>
+
