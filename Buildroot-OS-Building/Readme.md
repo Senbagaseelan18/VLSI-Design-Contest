@@ -108,3 +108,54 @@ You may also use cross-platform tools such as Etcher or USBImager.
 ### 5.2 QSPI NOR / NAND (if built)
 
 If using QSPI flash or NAND, images like nor.img or nand.img will be generated. Refer to the PolarFire SoC user guide for programming steps.
+
+## 🔧 <a name="optional-packagekernel-configuration"></a>6. Optional Package / Kernel Configuration
+
+Customize userspace packages:
+```bash
+make menuconfig
+make
+```
+
+Customize kernel configuration:
+```bash
+make linux-menuconfig
+make
+```
+
+You can also generate a license summary:
+```bash
+make legal-info
+```
+
+## 🧭 <a name="supported-board-families--defconfigs"></a>7. Supported Board Families / Defconfigs
+
+Here are example defconfigs from the external (configs/ directory):
+
+- icicle_defconfig, icicle_initramfs_defconfig, icicle_amp_defconfig (PolarFire SoC Icicle Kit)
+
+- mpfs_discovery_kit_defconfig (PolarFire SoC Discovery Kit)
+
+- sama5d4_xplained_graphics_defconfig (AT91 family)
+
+- pic64gx_curiosity_kit_defconfig (PIC64GX Curiosity Kit)
+
+
+## 🛠️ <a name="troubleshooting--tips"></a>8. Troubleshooting & Tips
+
+- “Exec format error” when chrooting into output/target → The binaries are built for RISC-V/ARM on the target board. You cannot run them on an x86 host unless using qemu-user-static + binfmt.
+
+- **Missing host dependencies** → Install the warnings from make.
+
+- **Boot failure** → Check the serial console, verify U-Boot, FIT image and DTB are correct and match your board variant. Consult the PolarFire SoC board user guide.
+
+- **Large build size** → Keep at least ~30-50 GB free to accommodate full Buildroot downloads, build artifacts and package caches.
+
+- **First mount delay for NAND’s UBIFS** → The first mount for NAND images might take longer due to “free space fix-up”. This is expected.
+
+## 📜 License & Credits
+
+This README is provided under the MIT License
+.
+See individual repos (buildroot, buildroot-external-microchip) for their respective licenses and terms.
+Thanks to Microchip Technology for their platform, tools and community support.
