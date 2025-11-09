@@ -1,22 +1,22 @@
 <div align="center">
 
   <h1>📸 USB Cam Recorder – Video Capture & Transfer System</h1>
-  
-  <p>
-    This section documents the complete setup, implementation, and validation  
-    of a <b>USB Camera Recording and Video Transfer Pipeline</b> developed for  
-    embedded Linux environments in the <b>VLSID 2026 Design Contest</b>.
+ This documentation explains the complete <b>Camera Setup</b> and <b>Camera Access</b> process  
+    for integrating a UVC-compliant USB Camera on an embedded Linux system built using  
+    <b>Buildroot</b> for the <b>VLSID 2026 Design Contest</b>.
   </p>
 
+  
   <a href="https://www.microchip.com/" target="_blank">
     <img src="./images/mic.png" width="200" alt="Microchip Technology logo">
   </a>
 
   <br><br>
-  <img src="https://img.shields.io/badge/Interface-USB_Camera-blue?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Video-MJPEG_1080p@30fps-green?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Transfer-SCP_Protocol-orange?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Platform-Linux_Embedded-darkred?style=for-the-badge" />
+ <img src="https://img.shields.io/badge/Interface-USB_Camera-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Platform-Buildroot_Linux-darkgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Video-MJPEG_1080p@30fps-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Project-VLSID_2026-red?style=for-the-badge" />
+
 </div>
 
 ---
@@ -62,6 +62,52 @@ The system performs:
 - Linux with **V4L2** and **UVC camera support**
 
 ---
+
+# 🧰 CAM SETUP
+
+This section focuses on enabling hardware and driver-level support for USB Camera integration  
+in the **Buildroot-based Linux environment**.
+
+---
+
+## ⚙️ 1. Hardware Configuration
+
+| Component | Setting / Description |
+|------------|-----------------------|
+| **USB Controller** | Dual-role OTG (On-The-Go) – USB 2.0 Compliant |
+| **Jumpers** | Close **J15** and **J17** on Icicle Kit to enable USB Host mode |
+| **Default Configuration** | J15 & J17 Open → acts as USB Device |
+| **Important Note** | To reprogram eMMC → open J15 and J17 |
+
+---
+
+## 🧩 2. Buildroot Driver Enablement
+
+To work with USB video devices, such as webcams, the following packages need to be included in the yocto or buildroot build systems.
+
+```bash
+yavta \
+libuvc \
+gstd \
+gstreamer1.0-plugins-good \
+v4l-utils \
+```
+
+## Accessing a webcam
+
+Use the below command to capture an image from a webcam
+```bash
+v4l2-ctl --device /dev/video0 --set-fmt-video=width=640,height=480,pixelformat=MJPG --stream-mmap=3 --stream-count=100 --stream-to=stream.vid
+```
+## Known Issues
+- 1.VBUS_ERROR in a_idle error.
+
+A VBUS_ERROR occurs when you boot Linux and then connect a USB device (e.g a webcam) directly to J16. Solution: Rather than connecting the webcam directly, connect a powered hub to J16 on the Icicle Kit, and then connect the webcam to the hub. To connect high power USB device, its is better to use an externally powered USB hub in between the USB device and the Icicle Kit.
+
+- 2If a VBUS_ERROR is displayed and LEDs turns off, a board power cycle will be needed to get the USB port working.
+
+
+
 
 ## 🚀 3. Implementation Steps
 
