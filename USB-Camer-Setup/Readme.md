@@ -127,3 +127,30 @@ ffmpeg -i video.mjpg -c:v libx264 -preset fast -crf 23 video.mp4
 ```
 
 <b>✅ Converted file video.mp4 plays smoothly with correct frame rate.<b>
+
+
+# 🖥️ 4. Output & Verification
+
+Playback verified using:
+
+-🎥 VLC Media Player
+
+-🎞️ Windows Media Player
+
+Stage	Description	Example
+🟢 Camera Capture	Live USB feed captured	
+
+🔴 Recording	1080p MJPEG recording	
+
+🔵 Transfer & Playback	MP4 playback on PC	
+🧠 5. Observations & Results
+
+✅ Successful USB camera interface and detection
+
+✅ Stable 1080p@30fps video recording
+
+✅ Verified SCP-based file transfer to host
+
+✅ Confirmed V4L2 + FFmpeg compatibility in Linux
+
+✅ Smooth playback verified on multiple media players
