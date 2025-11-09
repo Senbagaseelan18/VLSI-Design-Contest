@@ -89,6 +89,11 @@ BR2_EXTERNAL=$BR2_EXTERNAL make icicle_defconfig
 ```bash
 make -j$(nproc)
 ```
+
+<p align="center">
+  <img src="https://github.com/Senbagaseelan18/VLSI-Design-Contest/blob/main/Buildroot-OS-Building/Images/img.png" width="1000" alt="Microchip Logo">
+</p>
+
 Upon successful completion you will find images in output/images, including sdcard.img (for SD/eMMC) and other binaries (U-Boot, FIT, dtb).
 
 ## 💾 <a name="flashing-the-image"></a>5. Flashing the Image (SD / eMMC / QSPI)
