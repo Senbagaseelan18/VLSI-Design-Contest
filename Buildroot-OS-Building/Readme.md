@@ -110,6 +110,11 @@ sudo bmaptool copy sdcard.img /dev/sdX
 
 You may also use cross-platform tools such as Etcher or USBImager.
 
+<p align="center">
+  <img src="https://github.com/Senbagaseelan18/VLSI-Design-Contest/blob/main/Buildroot-OS-Building/Images/buildrootboot.png" width="1000" alt="Microchip Logo">
+</p>
+
+
 ### 5.2 QSPI NOR / NAND (if built)
 
 If using QSPI flash or NAND, images like nor.img or nand.img will be generated. Refer to the PolarFire SoC user guide for programming steps.
