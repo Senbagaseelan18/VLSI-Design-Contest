@@ -55,4 +55,56 @@ sudo apt install -y subversion build-essential bison flex gettext \
   libncurses5-dev texinfo autoconf automake libtool mercurial git \
   gperf gawk expat curl cvs libexpat-dev bzr unzip bc python3-dev \
   wget cpio rsync xxd bmap-tools
+```
+## 📁 Repository Layout & Supported Versions
 
+This setup uses two major components:
+
+- `buildroot-external-microchip`: Microchip’s extension containing board-specific packages, patches, and configs.  
+- **Buildroot tree:** Use the version matching your board family as mentioned in the external repository.
+
+### Example Versions
+
+- For **PolarFire SoC / Icicle Kit** → Buildroot version **2025.02** (tested).  
+- For **other Microchip SoC families** (AT91, PIC64GX) → check the external’s README for matching Buildroot versions.
+
+---
+
+## 🧪 Clone, Configure & Build
+
+### 4.1 Clone the repositories
+
+```bash
+git clone https://github.com/linux4microchip/buildroot-external-microchip.git
+git clone https://git.busybox.net/buildroot -b 2025.02 buildroot
+```
+
+### 4.2 Configure Buildroot for Icicle Kit
+```bash
+cd buildroot
+export BR2_EXTERNAL=../buildroot-external-microchip/
+BR2_EXTERNAL=$BR2_EXTERNAL make icicle_defconfig
+```
+### 4.3 Build the image
+```bash
+make -j$(nproc)
+```
+Upon successful completion you will find images in output/images, including sdcard.img (for SD/eMMC) and other binaries (U-Boot, FIT, dtb).
+
+## 💾 <a name="flashing-the-image"></a>5. Flashing the Image (SD / eMMC / QSPI)
+
+**CAUTION**: Verify device path via **lsblk** to avoid erasing the wrong device.
+
+### 5.1 SD/eMMC (typical)
+```bash
+cd output/images
+sudo dd if=sdcard.img of=/dev/sdX bs=1M status=progress conv=fsync
+# recommended — faster:
+sudo bmaptool copy sdcard.img /dev/sdX
+```
+
+You may also use cross-platform tools such as Etcher or USBImager.
+
+### 5.2 QSPI NOR / NAND (if built)
+
+If using QSPI flash or NAND, images like nor.img or nand.img will be generated. Refer to the PolarFire SoC user guide for programming steps.
