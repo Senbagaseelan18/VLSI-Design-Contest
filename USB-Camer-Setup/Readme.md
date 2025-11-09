@@ -163,6 +163,7 @@ Playback verified using:
 ---
 
 # 📂 6. Repository Structure
+```bash
 usb-cam-recorder/
 │
 ├── README.md
@@ -177,3 +178,4 @@ usb-cam-recorder/
 │   ├── video_recording.jpg
 │   └── video_playback.jpg
 └── LICENSE
+```
