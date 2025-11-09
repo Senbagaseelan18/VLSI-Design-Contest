@@ -7,9 +7,9 @@
     <b>Microchip PolarFire® SoC Icicle Kit</b> using the <b>Microchip Buildroot External</b> extension.
   </p>
 
-  <a href="https://www.microchip.com/" target="_blank">
-    <img src="./Images/mic.png" width="200" alt="Microchip Technology logo">
-  </a>
+   <a href="https://www.microchip.com/" target="_blank">
+  <img src="./Images/mic.png" width="200" alt="Microchip Technology logo">
+</a>
 
   <br><br>
   <img src="https://img.shields.io/badge/Board-PolarFire%20SoC%20Icicle_Kit-red?style=for-the-badge" />
