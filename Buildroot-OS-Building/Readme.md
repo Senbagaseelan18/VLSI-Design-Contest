@@ -56,7 +56,7 @@ sudo apt install -y subversion build-essential bison flex gettext \
   gperf gawk expat curl cvs libexpat-dev bzr unzip bc python3-dev \
   wget cpio rsync xxd bmap-tools
 ```
-## 📁 Repository Layout & Supported Versions
+## 📁3. Repository Layout & Supported Versions
 
 This setup uses two major components:
 
@@ -70,7 +70,7 @@ This setup uses two major components:
 
 ---
 
-## 🧪 Clone, Configure & Build
+## 🧪 4. Clone, Configure & Build
 
 ### 4.1 Clone the repositories
 
