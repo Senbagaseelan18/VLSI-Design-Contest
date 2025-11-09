@@ -159,3 +159,36 @@ This README is provided under the MIT License
 .
 See individual repos (buildroot, buildroot-external-microchip) for their respective licenses and terms.
 Thanks to Microchip Technology for their platform, tools and community support.
+
+---
+
+## 👩‍💻 Contributors
+
+| Name | GitHub Profile |
+|------|----------------|
+| **Senbagaseelan V** | [@Senbagaseelan18](https://github.com/Senbagaseelan18) |
+| **Praveen R** | [@PRAVEENRAMU14](https://github.com/PRAVEENRAMU14) |
+| **Ragul T** | [@Ragul-2005](https://github.com/Ragul-2005) |
+| **Tharun Babu V** | [@TharunBabu-05](https://github.com/TharunBabu-05) |
+
+---
+
+<div align="center">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Microchip_logo.svg" width="160" alt="Microchip Logo" />
+
+**© 2025 VLSI Design Contest – EdgeSight Project Team**  
+**Powered by Microchip PolarFire® SoC Technology**
+
+</div>
+
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/Build_Status-Success-success?style=for-the-badge" />
+<img src="https://img.shields.io/badge/OS-Buildroot_2025.02-blue?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Board-PolarFire®_SoC_Icicle_Kit-red?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Project-EdgeSight_AI_Assistive_Device-green?style=for-the-badge" />
+
+</div>
+
