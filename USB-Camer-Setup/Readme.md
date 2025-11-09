@@ -66,8 +66,7 @@ The system performs:
 
 # 🧰 3. CAM SETUP
 
-This section focuses on enabling hardware and driver-level support for USB Camera integration  
-in the **Buildroot-based Linux environment**.
+This section focuses on enabling hardware and driver-level support for USB Camera integration in the **Buildroot-based Linux environment**.
 
 ---
 
