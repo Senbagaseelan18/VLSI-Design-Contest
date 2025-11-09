@@ -133,11 +133,12 @@ ffmpeg -i video.mjpg -c:v libx264 -preset fast -crf 23 video.mp4
 
 Playback verified using:
 
--🎥 VLC Media Player
+- 🎥 VLC Media Player
 
--🎞️ Windows Media Player
+- 🎞️ Windows Media Player
 
 ## 🖥️ Output & Verification
+
 
 | 🧩 **Stage** | 📝 **Description** |
 |--------------|--------------------|
@@ -145,14 +146,34 @@ Playback verified using:
 | 🔴 **Video Recording** | Recorded ~10 seconds of MJPEG video and saved as `/root/video.mjpg` on the board. | 
 | 🔵 **Playback Verification** | The converted `video.mp4` played smoothly on VLC/Windows Media Player with correct frame rate and brightness. | 
 
+---
+
 #🧠 5. Observations & Results
 
-✅ Successful USB camera interface and detection
+- ✅ Successful USB camera interface and detection
 
-✅ Stable 1080p@30fps video recording
+- ✅ Stable 1080p@30fps video recording
 
-✅ Verified SCP-based file transfer to host
+- ✅ Verified SCP-based file transfer to host
 
-✅ Confirmed V4L2 + FFmpeg compatibility in Linux
+- ✅ Confirmed V4L2 + FFmpeg compatibility in Linux
 
-✅ Smooth playback verified on multiple media players
+- ✅ Smooth playback verified on multiple media players
+
+---
+
+# 📂 6. Repository Structure
+usb-cam-recorder/
+│
+├── README.md
+├── report/
+│   └── CAMERA_RECORDING_AND_VIDEO_TRANSFER_REPORT.pdf
+├── scripts/
+│   ├── capture_video.sh
+│   ├── transfer_video.sh
+│   └── convert_video.sh
+├── images/
+│   ├── cam_capture.jpg
+│   ├── video_recording.jpg
+│   └── video_playback.jpg
+└── LICENSE
