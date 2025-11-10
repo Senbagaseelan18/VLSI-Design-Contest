@@ -71,6 +71,8 @@ Confirm that the camera is detected as:
 ```bash
 v4l2-ctl --device=/dev/video0 --stream-mmap --stream-count=0
 ```
+<p align="center"> <img width="850" alt="Live Camera Stream Interface" src="https://github.com/user-attachments/assets/bcad2162-849e-413a-a71e-013121848362" /> </p>
+
 
 This command starts **continuous streaming** until manually stopped (`Ctrl + C`).
 
@@ -167,7 +169,6 @@ Stop the server using **Ctrl+C** when done.
 - No dependency on multimedia frameworks like ffmpeg or OpenCV
 
  # 🖼️ 6. Output
-<p align="center"> <img width="850" alt="Live Camera Stream Interface" src="https://github.com/user-attachments/assets/bcad2162-849e-413a-a71e-013121848362" /> </p>
 
 🎯 Live Stream successfully displayed in browser
 
