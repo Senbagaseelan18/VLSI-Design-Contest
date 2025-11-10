@@ -132,7 +132,9 @@ ls -lh
 # Expected: yolov4-tiny.cfg, yolov4-tiny.weights, coco.names
 ```
 
-https://raw.githubusercontent.com/Senbagaseelan18/VLSI-Design-Contest/master/Object%20Detection-YOLOv4-Tiny/Images/yolov4.png
+<p align="center">
+  <img src="https://drive.google.com/uc?export=view&id=1y3Vgs3MaNe1TVlueeT0KonbEzmSI9ADo" width="1000" alt="YOLOv4 Object Detection Architecture">
+</p>
 
 
 
