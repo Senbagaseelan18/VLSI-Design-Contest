@@ -1,9 +1,9 @@
 <div align="center">
 
-  <h1>🟢 Object Detection using YOLOv4-Tiny – Flask Web Interface</h1>
+  <h1>🟢 YOLOv4-Tiny Object Detection – Single-Image Web Interface</h1>
   <p>
-  This repository demonstrates a **single-frame object detection system** implemented on a **Linux-based embedded board** using **YOLOv4-Tiny** with the **OpenCV DNN module** and **Flask web interface**.  
-  The system captures a single image from a **USB camera**, performs **real-time object detection**, and displays the output instantly on a webpage.
+  This repository implements a **single-image object detection system** on an **embedded Buildroot Linux board** using **YOLOv4-Tiny** with **OpenCV DNN** and a **Flask web interface**.  
+  The system captures one frame from a **USB camera**, performs **object detection**, and displays the detected result instantly on a webpage.
   </p>
 
   <a href="https://www.microchip.com/" target="_blank">
@@ -11,7 +11,7 @@
   </a>
 
   <br><br>
-  
+
   <img src="https://img.shields.io/badge/Model-YOLOv4_Tiny-red?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Framework-Flask-orange?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Platform-Buildroot_Linux-darkgreen?style=for-the-badge" />
@@ -26,152 +26,64 @@
 
 | 🔢 # | 📂 Topic | 🔗 Link |
 |------|----------|---------|
-| 1 | **Objective** | [Jump to Section](#-1-objective) |
-| 2 | **System Configuration** | [Jump to Section](#-2-system-configuration) |
-| 3 | **Implementation Steps** | [Jump to Section](#-3-implementation-steps) |
-| 4 | **Buildroot Menuconfig Settings** | [Jump to Section](#-4-buildroot-menuconfig-settings) |
-| 5 | **Execution Steps** | [Jump to Section](#-5-execution-steps) |
-| 6 | **Result** | [Jump to Section](#-6-result) |
-| 7 | **Repository Structure** | [Jump to Section](#-7-repository-structure) |
-| 8 | **Contributors** | [Jump to Section](#-8-contributors) |
+| 1 | **Introduction** | [Jump to Section](#-1-introduction) |
+| 2 | **Buildroot Configuration** | [Jump to Section](#-2-buildroot-configuration) |
+| 3 | **Directory Setup** | [Jump to Section](#-3-directory-setup) |
+| 4 | **Download Required Model Files** | [Jump to Section](#-4-download-required-model-files) |
+| 5 | **Create Python Application** | [Jump to Section](#-5-create-python-application) |
+| 6 | **Run the Application** | [Jump to Section](#-6-run-the-application) |
+| 7 | **Performance Results** | [Jump to Section](#-7-performance-results) |
+| 8 | **Output** | [Jump to Section](#-8-output) |
+| 9 | **Contributors** | [Jump to Section](#-9-contributors) |
 
 ---
 
-## 🔹 1. Objective
-This project enables **real-time object detection** using **YOLOv4-Tiny** on an embedded Linux system.  
-It is optimized to work **without PyTorch or ONNX Runtime**, relying only on **OpenCV's DNN backend** for inference.  
-The application captures a **single high-quality image** from a **USB camera** and processes it using **YOLOv4-Tiny**, displaying results through a **Flask web interface**.
+## 🔹 1. Introduction
+
+The goal of this project is to implement **real-time object detection** on an embedded board using the **YOLOv4-Tiny** model — without requiring **PyTorch** or **ONNX**.  
+Instead, the system uses **OpenCV's DNN module** for inference, making it lightweight and suitable for **CPU-only embedded environments**.
+
+To minimize latency, the system captures a **single frame** each time the user clicks the **Capture Image** button in the web interface.  
+The captured image is processed with **YOLOv4-Tiny**, and the output is shown instantly in the browser.
 
 ---
 
-## 🔹 2. System Configuration
+## 🔹 2. Buildroot Configuration
 
-| Parameter | Description |
-|------------|-------------|
-| **Board** | Microchip PolarFire SoC Icicle Kit |
-| **OS** | Buildroot Linux (custom image) |
-| **Python Version** | 3.10 |
-| **Framework** | Flask |
-| **Vision Library** | OpenCV 4.10 |
-| **Model Used** | YOLOv4-Tiny |
-| **Detection Mode** | Single Frame |
-| **Interface** | USB Camera (V4L2 MJPEG) |
+### 🧩 Required Packages in make menuconfig
 
----
-
-## 🔹 3. Implementation Steps
-
-### Step 1️⃣ – Clone the Repository
-```bash
-git clone https://github.com/<your-username>/YOLOv4-Tiny-ObjectDetection-WebApp.git
-cd YOLOv4-Tiny-ObjectDetection-WebApp
-```
-
-### Step 2️⃣ – Download Model Files
-```bash
-wget --no-check-certificate https://raw.githubusercontent.com/AlexeyAB/darknet/master/cfg/yolov4-tiny.cfg
-wget --no-check-certificate https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v4_pre/yolov4-tiny.weights
-wget --no-check-certificate https://raw.githubusercontent.com/pjreddie/darknet/master/data/coco.names
-```
-
-Place them inside:
-
-```bash
-/root/models_V4/
-```
-
-### Step 3️⃣ – Verify OpenCV Modules
-```bash
-python3 -c "import cv2; print(cv2.getBuildInformation())"
-```
-Ensure `dnn`, `videoio`, `imgproc`, and `highgui` are listed as enabled.
-
----
-
-## 🔹 4. Buildroot Menuconfig Settings
-This section details everything you must enable inside Buildroot to support:
-
-- Python 3
-- Flask framework
-- OpenCV (DNN + video + GStreamer)
-- USB Camera
-- HTTPS downloads
-
-### ⚙️ Step 1 – Python Packages
-In Buildroot:
-
+### 🐍 Python Configuration
 ```css
-Target packages  --->
-    Interpreter languages and scripting  --->
+Target packages --->
+    Interpreter languages and scripting --->
         [*] python3
         [*] python3-pip
         [*] python3-numpy
-        [*] python3-requests
         [*] python3-pillow
+        [*] python3-requests
         [*] python3-flask
-        [*] python3-scapy
-        [*] python3-schedule
-        [*] python3-setuptools
 ```
 
-✅ **Explanation:**
-
-| Package | Purpose |
-|---------|---------|
-| python3 | Core Python interpreter |
-| python3-pip | Install any additional modules |
-| python3-flask | Web framework for interface |
-| python3-numpy | Needed for OpenCV DNN operations |
-| python3-pillow | Image handling |
-| python3-requests | HTTP communication (optional for API) |
-| python3-setuptools | Build dependencies for Python libs |
-
-### ⚙️ Step 2 – OpenCV Configuration
-Navigate to:
-
-```lua
+### 🎥 OpenCV Configuration
+```css
 Target packages --->
     Graphic libraries and applications --->
         opencv4 --->
+            [*] dnn
+            [*] highgui
+            [*] video
+            [*] videoio
+            [*] imgproc
+            [*] objdetect
+            [*] gstreamer-1.x
+            [*] ffmpeg
+            [*] v4l
+            [*] png
+            [*] jpeg
+            [*] webp
 ```
 
-Then enable:
-
-```css
---- opencv4
-    [*] dnn
-    [*] features2d
-    [*] highgui
-    [*] imgcodecs
-    [*] imgproc
-    [*] ml
-    [*] objdetect
-    [*] shape
-    [*] stitching
-    [*] ts
-    [*] video
-    [*] videoio
-    [*] gstreamer-1.x
-    [*] ffmpeg
-    [*] jpeg
-    [*] png
-    [*] tiff
-    [*] v4l
-    [*] webp
-    [*] install extra data
-```
-
-✅ **Explanation:**
-
-| Option | Purpose |
-|--------|---------|
-| dnn | Enables YOLO inference through OpenCV |
-| videoio | Handles camera input |
-| gstreamer / ffmpeg | Stream and decode MJPEG frames |
-| jpeg, png, tiff | Enables image file encoding |
-| v4l | USB camera capture support |
-
-### ⚙️ Step 3 – USB & Networking Support
+### ⚙️ Utilities
 ```css
 Hardware handling --->
     [*] v4l2-utils
@@ -180,71 +92,241 @@ Networking applications --->
     [*] wget
 ```
 
-✅ **Explanation:**
+### ✅ Purpose Summary:
 
-- **v4l2-utils:** Controls camera parameters (exposure, format)
-- **ca-certificates:** Required for HTTPS file downloads
-- **wget:** For model file retrieval from GitHub
+| Category | Package | Function |
+|----------|---------|----------|
+| Python | Flask, Numpy, Pillow | Web + Image Processing |
+| OpenCV | DNN, VideoIO | Model inference + Camera interface |
+| Hardware | v4l2-utils | Control exposure & formats |
+| Network | ca-certificates | HTTPS model downloads |
 
 ---
 
-## 🔹 5. Execution Steps
+## 🔹 3. Directory Setup
 
-### ▶️ Step 1 – Transfer Files
+Create a working directory for model files and your application.
+
 ```bash
-scp -r YOLOv4-Tiny-ObjectDetection-WebApp root@<board-ip>:/root/
+# Create project directory
+mkdir -p /root/models_V4
+cd /root/models_V4
 ```
 
-### ▶️ Step 2 – Run Flask Application
+---
+
+## 🔹 4. Download Required Model Files
+
+Since Buildroot lacks SSL certificates by default, use the `--no-check-certificate` flag.
+
+```bash
+# Download YOLOv4-Tiny config and weights
+wget --no-check-certificate https://raw.githubusercontent.com/AlexeyAB/darknet/master/cfg/yolov4-tiny.cfg
+wget --no-check-certificate https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v4_pre/yolov4-tiny.weights
+
+# Download COCO class labels
+wget --no-check-certificate https://raw.githubusercontent.com/pjreddie/darknet/master/data/coco.names
+
+# Confirm files
+ls -lh
+# Expected: yolov4-tiny.cfg, yolov4-tiny.weights, coco.names
+```
+
+---
+
+## 🔹 5. Create Python Application
+
+Create the Python file:
+
+```bash
+nano /root/models_V4/obj1.py
+```
+
+Paste the following complete code:
+
+```python
+import cv2
+import numpy as np
+from flask import Flask, request, send_file
+import os, time, subprocess
+
+# ==================== Configuration ====================
+MODEL_CFG = "/root/models_V4/yolov4-tiny.cfg"
+MODEL_WEIGHTS = "/root/models_V4/yolov4-tiny.weights"
+CLASSES_FILE = "/root/models_V4/coco.names"
+OUTPUT_IMAGE = "/tmp/detected.jpg"
+CAMERA_DEVICE = 0  # /dev/video0
+
+# ==================== Load YOLO Model ====================
+print("[INFO] Loading YOLOv4-tiny model...")
+if not os.path.exists(MODEL_CFG) or not os.path.exists(MODEL_WEIGHTS):
+    raise FileNotFoundError("❌ YOLO model files not found! Check paths.")
+
+net = cv2.dnn.readNetFromDarknet(MODEL_CFG, MODEL_WEIGHTS)
+net.setPreferableBackend(cv2.dnn.DNN_BACKEND_OPENCV)
+net.setPreferableTarget(cv2.dnn.DNN_TARGET_CPU)
+print("[INFO] YOLOv4-tiny model loaded successfully ✅")
+
+with open(CLASSES_FILE) as f:
+    CLASSES = [c.strip() for c in f]
+
+# ==================== Flask App ====================
+app = Flask(__name__)
+
+HTML_PAGE = """
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YOLOv4-Tiny Object Detection</title>
+  </head>
+  <body style="text-align:center; font-family:Arial">
+    <h2>YOLOv4-Tiny Object Detection</h2>
+    <form method="POST">
+      <button type="submit" style="font-size:20px; padding:10px 20px;">📸 Capture Image</button>
+    </form>
+    {% if img %}
+      <h3>Detected Image:</h3>
+      <img src="/output" style="max-width:90%; border:2px solid #333;">
+    {% endif %}
+  </body>
+</html>
+"""
+
+# ==================== Helper Functions ====================
+def adjust_camera_exposure():
+    """Auto-adjust camera exposure for low light."""
+    try:
+        subprocess.run(["v4l2-ctl", "-d", f"/dev/video{CAMERA_DEVICE}", "--set-ctrl=exposure_auto=1"], check=False)
+        subprocess.run(["v4l2-ctl", "-d", f"/dev/video{CAMERA_DEVICE}", "--set-ctrl=exposure_absolute=400"], check=False)
+    except Exception:
+        print("[WARN] Skipping exposure adjustment.")
+
+def detect_objects(image):
+    (H, W) = image.shape[:2]
+    blob = cv2.dnn.blobFromImage(image, 1/255.0, (320, 320), swapRB=True, crop=False)
+    net.setInput(blob)
+    layer_outputs = net.forward(net.getUnconnectedOutLayersNames())
+
+    boxes, confidences, classIDs = [], [], []
+    for output in layer_outputs:
+        for detection in output:
+            scores = detection[5:]
+            classID = np.argmax(scores)
+            confidence = scores[classID]
+            if confidence > 0.4:
+                box = detection[0:4] * np.array([W, H, W, H])
+                (centerX, centerY, width, height) = box.astype("int")
+                x = int(centerX - width / 2)
+                y = int(centerY - height / 2)
+                boxes.append([x, y, int(width), int(height)])
+                confidences.append(float(confidence))
+                classIDs.append(classID)
+
+    idxs = cv2.dnn.NMSBoxes(boxes, confidences, 0.4, 0.3)
+    if len(idxs) > 0:
+        for i in idxs.flatten():
+            x, y, w, h = boxes[i]
+            label = f"{CLASSES[classIDs[i]]}: {confidences[i]:.2f}"
+            cv2.rectangle(image, (x, y), (x + w, y + h), (0, 255, 0), 2)
+            cv2.putText(image, label, (x, y - 5),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+    return image
+
+# ==================== Web Routes ====================
+@app.route("/", methods=["GET", "POST"])
+def index():
+    if request.method == "POST":
+        adjust_camera_exposure()
+        cap = cv2.VideoCapture(CAMERA_DEVICE, cv2.CAP_V4L2)
+        cap.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc(*'MJPG'))
+        cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
+        cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
+
+        time.sleep(1.2)
+        for _ in range(3): cap.read()
+
+        ret, frame = cap.read()
+        cap.release()
+
+        if not ret:
+            return "❌ Failed to capture image from camera."
+
+        frame = cv2.convertScaleAbs(frame, alpha=1.3, beta=35)
+        output = detect_objects(frame)
+        cv2.imwrite(OUTPUT_IMAGE, output)
+        print("[INFO] Detection complete:", OUTPUT_IMAGE)
+
+        return HTML_PAGE.replace("{% if img %}", "").replace("{% endif %}", "").replace("/output", "/output")
+    else:
+        return HTML_PAGE.replace("{% if img %}", "").replace("{% endif %}", "")
+
+@app.route("/output")
+def output_image():
+    if os.path.exists(OUTPUT_IMAGE):
+        return send_file(OUTPUT_IMAGE, mimetype='image/jpeg')
+    return "❌ No detected image yet."
+
+if __name__ == "__main__":
+    print("[INFO] Starting Flask server at http://0.0.0.0:5000")
+    app.run(host="0.0.0.0", port=5000, threaded=True)
+```
+
+---
+
+## 🔹 6. Run the Application
+
 ```bash
 cd /root/models_V4
-python3 obj1_fast.py
+python3 obj1.py
 ```
 
-### ▶️ Step 3 – Access Web Interface
-Open in browser:
+Then, open a browser on your PC connected to the same network:
 
 ```cpp
 http://<board-ip>:5000
 ```
 
-Click 📸 **Capture Image** to trigger detection and view results.
+Click 📸 **Capture Image** →  
+The system captures one frame, detects objects, and displays the result instantly.
 
 ---
 
-## 🔹 6. Result
-✅ Captures high-quality still image via MJPEG  
-✅ Runs YOLOv4-Tiny DNN model in OpenCV backend  
-✅ Displays bounding boxes on web interface  
-✅ Achieves detection time ~5–7 seconds (CPU only)
+## 🔹 7. Performance Results
+
+| Parameter | Before Optimization | After Optimization |
+|-----------|--------------------|--------------------|
+| Model | YOLOv4-Tiny (416×416) | YOLOv4-Tiny (320×320) |
+| Avg Inference Time | ~30 sec | ~5 sec |
+| Accuracy | High | Slightly reduced |
+| Framework | OpenCV DNN | OpenCV DNN |
+| Camera Format | MJPG | MJPG |
+| Board | Buildroot Embedded Linux | Buildroot Embedded Linux |
 
 ---
 
-## 🔹 7. Repository Structure
-```bash
-YOLOv4-Tiny-ObjectDetection-WebApp/
-├── obj1_fast.py               # Flask application script
-├── yolov4-tiny.cfg            # YOLOv4-Tiny configuration
-├── yolov4-tiny.weights        # Pretrained YOLOv4-Tiny model
-├── coco.names                 # Object label file
-└── README.md                  # Documentation
-```
+## 🔹 8. Output
+
+✅ Image brightness is auto-corrected using camera exposure + software gain.
+
+✅ Each button click captures one frame, eliminating video latency.
+
+✅ The processed image is displayed immediately on the web interface.
 
 ---
 
-## 🔹 8. Contributors
+## 🔹 9. Contributors
 
 | 👤 Name | 🏢 Organization | 💼 Role |
 |---------|----------------|---------|
-| Senbagaseelan V | Embedded Vision Research | Project Developer |
-| ChatGPT (OpenAI) | Technical Assistant | Architecture & Optimization |
+| Senbagaseelan V | Embedded Vision Systems | Developer |
+| ChatGPT (OpenAI) | Assistant | Technical Guidance |
 
 ---
 
 <div align="center">
 
 ⚡ **YOLOv4-Tiny | Flask | OpenCV DNN | Buildroot Linux**  
-🎯 **Optimized for Microchip PolarFire SoC Icicle Kit**  
-📷 **USB Camera Interface | 🧠 Onboard CPU Inference**
+📷 **Optimized for PolarFire SoC Icicle Kit**  
+🧠 **Lightweight Single-Image Detection on CPU**
 
 </div>
