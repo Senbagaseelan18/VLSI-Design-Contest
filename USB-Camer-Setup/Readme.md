@@ -8,9 +8,8 @@
 
   
   <a href="https://www.microchip.com/" target="_blank">
-    <img src="./images/mic.png" width="200" alt="Microchip Technology logo">
+<img width="270" height="180" alt="image" src="https://github.com/user-attachments/assets/1d5e8b0d-e14c-4ee5-8a40-ab32b5b485f0" />
   </a>
-
   <br><br>
  <img src="https://img.shields.io/badge/Interface-USB_Camera-blue?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Platform-Buildroot_Linux-darkgreen?style=for-the-badge" />
