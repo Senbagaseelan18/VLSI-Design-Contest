@@ -146,8 +146,6 @@ http://<BOARD_IP>:8080
 
  # 🧠 5. Result
  
-<p align="center"><img width="916" height="561" alt="image" src="https://github.com/user-attachments/assets/a03e480e-93e8-4a5c-b782-4217d19d70e6" /></p>
-
 ✅ Successfully implemented a real-time USB camera live stream using:
 - v4l2-ctl for video capture
 - Flask for web streaming
@@ -155,6 +153,7 @@ http://<BOARD_IP>:8080
 
  # 🖼️ 6. Output
 
+<p align="center"><img width="916" height="561" alt="image" src="https://github.com/user-attachments/assets/a03e480e-93e8-4a5c-b782-4217d19d70e6" /></p>
 🎯 Live Stream successfully displayed in browser
 
 ### 🎬 Demonstration Video 
