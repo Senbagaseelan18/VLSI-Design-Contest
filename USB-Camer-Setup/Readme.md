@@ -180,10 +180,9 @@ ffmpeg -f mjpeg -i video.mjpg -c:v libx264 -preset fast -pix_fmt yuv420p video2.
 
 ## 7.🎬 Demonstration Video
 
-<p align="center">
-  <a href="https://drive.google.com/file/d/1_fOGxz7dh-BbckkwF-zosibxvsfo0BrW/view?usp=drive_link" target="_blank">
-  </a>
-</p>
+
+  <a href="https://drive.google.com/file/d/1_fOGxz7dh-BbckkwF-zosibxvsfo0BrW/view?usp=drive_link" target="_blank"></a>
+
 🎥 **Click the link above** to watch the full demonstration.
 
 # 🖥️ 4. Output & Verification
