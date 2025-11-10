@@ -132,6 +132,15 @@ ls -lh
 # Expected: yolov4-tiny.cfg, yolov4-tiny.weights, coco.names
 ```
 
+<p align="center">
+  <img src="https://github.com/Senbagaseelan18/YOLOv4-Tiny-ObjectDetection-WebApp/blob/main/Images/yolov4.png" width="1000" alt="YOLOv4-Tiny Object Detection">
+</p>
+
+<p align="center">
+  <img src="https://github.com/Senbagaseelan18/YOLOv4-Tiny-ObjectDetection-WebApp/blob/main/Images/yolo2.png" width="1000" alt="YOLOv4-Tiny Object Detection">
+</p>
+
+
 ---
 
 ## 🔹 5. Create Python Application
@@ -311,6 +320,14 @@ The system captures one frame, detects objects, and displays the result instantl
 ✅ Each button click captures one frame, eliminating video latency.
 
 ✅ The processed image is displayed immediately on the web interface.
+
+<p align="center">
+  <img src="https://github.com/Senbagaseelan18/YOLOv4-Tiny-ObjectDetection-WebApp/blob/main/Images/out.png" width="1000" alt="YOLOv4-Tiny Object Detection">
+</p>
+
+<p align="center">
+  <img src="https://github.com/Senbagaseelan18/YOLOv4-Tiny-ObjectDetection-WebApp/blob/main/Images/out1.png" width="1000" alt="YOLOv4-Tiny Object Detection">
+</p>
 
 ---
 
