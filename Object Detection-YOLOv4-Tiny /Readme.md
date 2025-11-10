@@ -314,19 +314,29 @@ The system captures one frame, detects objects, and displays the result instantl
 
 ---
 
-## 🔹 9. Contributors
+## 👩‍💻 9. Contributors
 
-| 👤 Name | 🏢 Organization | 💼 Role |
-|---------|----------------|---------|
-| Senbagaseelan V | Embedded Vision Systems | Developer |
-| ChatGPT (OpenAI) | Assistant | Technical Guidance |
+| 👤 **Name** | 🌐 **GitHub Profile** |
+|-------------|-----------------------|
+| **Senbagaseelan V** | [@Senbagaseelan18](https://github.com/Senbagaseelan18) |
+| **Praveen R** | [@PRAVEENRAMU14](https://github.com/PRAVEENRAMU14) |
+| **Ragul T** | [@Ragul-2005](https://github.com/Ragul-2005) |
+| **Tharun Babu V** | [@TharunBabu-05](https://github.com/TharunBabu-05) |
 
 ---
 
 <div align="center">
 
-⚡ **YOLOv4-Tiny | Flask | OpenCV DNN | Buildroot Linux**  
-📷 **Optimized for PolarFire SoC Icicle Kit**  
-🧠 **Lightweight Single-Image Detection on CPU**
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Microchip_logo.svg" width="160" alt="Microchip Logo" />
+
+**© 2025 VLSI Design Contest – YOLOv4-Tiny Object Detection Project**  
+**Developed on Buildroot Linux using PolarFire® SoC Icicle Kit**
+
+<br><br>
+
+<img src="https://img.shields.io/badge/Setup_Status-Completed-success?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Detection-Active-green?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Performance-Optimized-blue?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Inference-Verified-orange?style=for-the-badge" />
 
 </div>
