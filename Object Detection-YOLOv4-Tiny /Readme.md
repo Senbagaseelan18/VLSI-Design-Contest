@@ -133,7 +133,7 @@ ls -lh
 ```
 
 <p align="center">
-  <img src="https://github.com/Senbagaseelan18/VLSI-Design-Contest/blob/main/Object%20Detection-YOLOv4-Tiny/Images/yolov4.png" width="1000" alt="YOLOv4-Tiny Object Detection">
+  <img src="https://github.com/Senbagaseelan18/VLSI-Design-Contest/blob/main/Images/yolov4.png" width="1000" alt="YOLOv4-Tiny Object Detection">
 </p>
 
 
