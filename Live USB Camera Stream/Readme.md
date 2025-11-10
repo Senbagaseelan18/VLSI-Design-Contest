@@ -119,6 +119,9 @@ if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080)
 ```
 
+
+<p align="center"><img width="978" height="492" alt="image" src="https://github.com/user-attachments/assets/a077fbf2-8500-4594-a170-e5dcbe099dc9" /></p>
+
 ### ✅ Step 4 – Run the Web Server
 ```bash
 python3 live_cam.py
@@ -130,28 +133,8 @@ Then open your browser and visit:
 http://<BOARD_IP>:8080
 ```
 
+<p align="center"><img width="892" height="455" alt="image" src="https://github.com/user-attachments/assets/16661739-51af-426b-9f24-c67d110bd85c" /></p>
 🎥 You’ll see a live video streaming interface.
-✅ Step 4 – Run the Web Server
-python3 live_cam.py
-
-
-Then open your browser and visit:
-
-http://<BOARD_IP>:8080
-
-
-🎥 You’ll see a live video streaming interface.
-✅ Step 4 – Run the Web Server
-python3 live_cam.py
-
-
-Then open your browser and visit:
-
-http://<BOARD_IP>:8080
-
-
-🎥 You’ll see a live video streaming interface.
-Stop the server using **Ctrl+C** when done.
 
 
 # 🗒️ 4. Notes
@@ -162,6 +145,8 @@ Stop the server using **Ctrl+C** when done.
 - Compatible even with minimal Buildroot systems.
 
  # 🧠 5. Result
+ 
+<p align="center"><img width="916" height="561" alt="image" src="https://github.com/user-attachments/assets/a03e480e-93e8-4a5c-b782-4217d19d70e6" /></p>
 
 ✅ Successfully implemented a real-time USB camera live stream using:
 - v4l2-ctl for video capture
