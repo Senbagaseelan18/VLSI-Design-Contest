@@ -138,7 +138,7 @@ https://raw.githubusercontent.com/Senbagaseelan18/VLSI-Design-Contest/master/Obj
 
 
 <p align="center">
-  <img src="https://github.com/Senbagaseelan18/VLSI-Design-Contest/blob/main/Object%20Detection-YOLOv4-Tiny/Images/yolov2.png" width="1000" alt="YOLOv4-Tiny Object Detection">
+  <img src="https://github.com/Senbagaseelan18/VLSI-Design-Contest/blob/main/Object Detection-YOLOv4-Tiny/Images/yolov2.png" width="1000" alt="YOLOv4-Tiny Object Detection">
 </p>
 
 
