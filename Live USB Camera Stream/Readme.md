@@ -173,7 +173,7 @@ Stop the server using **Ctrl+C** when done.
 🎯 Live Stream successfully displayed in browser
 
 ### 🎬 Demonstration Video 
-<p align="center"> <a href="https://drive.google.com/file/d/1_fOGxz7dh-BbckkwF-zosibxvsfo0BrW/view?usp=drive_link" target="_blank"> <img src="./images/video_preview.jpg" width="700" alt="USB Camera Live Stream Demonstration"> </a> </p>
+<p align="center"> <a href="https://drive.google.com/file/d/1-Ze0Qu42WP74fJi2GHjkxjDkiBL74YwN/view?usp=drive_link" target="_blank"> <img src="./images/video_preview.jpg" width="700" alt="USB Camera Live Stream Demonstration"> </a> </p>
 
 🎥 Click the image above to watch the full demonstration video on Google Drive.
 
