@@ -169,7 +169,7 @@ scp root@192.168.137.2:/root/video.mjpg .
 
 ## 🎬 Step 7 – Convert to MP4 (on PC)
 ```bash
-ffmpeg -i video.mjpg -c:v libx264 -preset fast -crf 23 video.mp4
+ffmpeg -f mjpeg -i video.mjpg -c:v libx264 -preset fast -pix_fmt yuv420p video2.mp4
 ```
 
 <b>✅ Converted file video.mp4 plays smoothly with correct frame rate.<b>
