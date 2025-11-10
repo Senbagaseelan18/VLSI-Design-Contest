@@ -99,7 +99,7 @@ Use the below command to capture an image from a webcam
 v4l2-ctl --device /dev/video0 --set-fmt-video=width=640,height=480,pixelformat=MJPG --stream-mmap=3 --stream-count=100 --stream-to=stream.vid
 ```
 <p align="center"><img width="1280" height="650" alt="image" src="https://github.com/user-attachments/assets/bcad2162-849e-413a-a71e-013121848362" /></p>
-
+<p align="center"><h1>Camera Detected Successfully</h1></p>
 
 ## ⚠️ 4. Known Issues
 - 1.VBUS_ERROR in a_idle error.
