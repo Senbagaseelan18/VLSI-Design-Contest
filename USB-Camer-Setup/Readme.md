@@ -158,7 +158,7 @@ file /root/video.mjpg
 <p align="center"><img width="1280" height="655" alt="image" src="https://github.com/user-attachments/assets/f2745d28-04b9-4e1e-a49f-619ae0e33b47" /></p>
 
 
-<p align="center"><b></b>video.mjpg: Motion JPEG video data</b></p>
+<p align="center"><b></b>video.mjpg: Motion JPEG video data</p>
 
 
 ## 💾 Step 6 – Transfer File via SCP
@@ -174,7 +174,7 @@ ffmpeg -f mjpeg -i video.mjpg -c:v libx264 -preset fast -pix_fmt yuv420p video2.
 ```
 <p align="center"><img width="1280" height="655" alt="image" src="https://github.com/user-attachments/assets/e1cea8d5-9550-46a0-8cc9-c6c846213a0b" /></p>
 
-<p align="center"><b>✅ Converted file video.mp4 plays smoothly with correct frame rate.</b></p>
+<p align="center"><b>✅ Converted file video.mp4 plays smoothly with correct frame rate.</p>
 
 
 # 🖥️ 4. Output & Verification
