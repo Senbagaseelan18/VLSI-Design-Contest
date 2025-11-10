@@ -133,11 +133,12 @@ ls -lh
 ```
 
 <p align="center">
-  <img src="https://github.com/Senbagaseelan18/YOLOv4-Tiny-ObjectDetection-WebApp/blob/main/Images/yolov4.png" width="1000" alt="YOLOv4-Tiny Object Detection">
+  <img src="https://github.com/Senbagaseelan18/VLSI-Design-Contest/blob/main/Object%20Detection-YOLOv4-Tiny/Images/yolov4.png" width="1000" alt="YOLOv4-Tiny Object Detection">
 </p>
 
+
 <p align="center">
-  <img src="https://github.com/Senbagaseelan18/YOLOv4-Tiny-ObjectDetection-WebApp/blob/main/Images/yolo2.png" width="1000" alt="YOLOv4-Tiny Object Detection">
+  <img src="https://github.com/Senbagaseelan18/VLSI-Design-Contest/blob/main/Object%20Detection-YOLOv4-Tiny/Images/yolov2.png" width="1000" alt="YOLOv4-Tiny Object Detection">
 </p>
 
 
@@ -322,12 +323,13 @@ The system captures one frame, detects objects, and displays the result instantl
 ✅ The processed image is displayed immediately on the web interface.
 
 <p align="center">
-  <img src="https://github.com/Senbagaseelan18/YOLOv4-Tiny-ObjectDetection-WebApp/blob/main/Images/out.png" width="1000" alt="YOLOv4-Tiny Object Detection">
+  <img src="https://github.com/Senbagaseelan18/VLSI-Design-Contest/blob/main/Object%20Detection-YOLOv4-Tiny/Images/out.png" width="1000" alt="YOLOv4-Tiny Object Detection">
 </p>
 
 <p align="center">
-  <img src="https://github.com/Senbagaseelan18/YOLOv4-Tiny-ObjectDetection-WebApp/blob/main/Images/out1.png" width="1000" alt="YOLOv4-Tiny Object Detection">
+  <img src="https://github.com/Senbagaseelan18/VLSI-Design-Contest/blob/main/Object%20Detection-YOLOv4-Tiny/Images/out1.png" width="1000" alt="YOLOv4-Tiny Object Detection">
 </p>
+
 
 ---
 
