@@ -226,7 +226,7 @@ usb-cam-recorder/
 ├── images/
 │   ├── cam_capture.jpg
 │   ├── video_recording.jpg
-│   └── video_playback.jpg
+│   └── Web_camera_access.jpg
 └── LICENSE
 ```
 
