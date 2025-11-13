@@ -336,6 +336,8 @@ if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080, debug=False)
 EOF
 ```
+![](https://raw.githubusercontent.com/Senbagaseelan18/VLSI-Design-Contest/main/Speech_to_text_web/Images/1.png)
+
 
 ---
 
@@ -345,6 +347,8 @@ EOF
 cd /root/speech_web
 python3 app_google.py
 ```
+![](https://raw.githubusercontent.com/Senbagaseelan18/VLSI-Design-Contest/main/Speech_to_text_web/Images/2.png)
+
 
 ### Access from Browser
 ```
@@ -354,6 +358,8 @@ http://<board-ip>:8080
 ---
 
 ## 🟩 8. Output
+![](https://raw.githubusercontent.com/Senbagaseelan18/VLSI-Design-Contest/main/Speech_to_text_web/Images/3.png)
+![](https://raw.githubusercontent.com/Senbagaseelan18/VLSI-Design-Contest/main/Speech_to_text_web/Images/4.png)
 
 ✅ Real-time transcription  
 ✅ Start/Stop recording  
